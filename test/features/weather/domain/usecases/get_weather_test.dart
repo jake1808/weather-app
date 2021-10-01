@@ -45,11 +45,11 @@ void main() {
 
   test('should get weather data from the repository', () async {
     when(mockWeatherRepository!.getWeatherData(any))
-        .thenAnswer((_) async => Right(tWeatherData));
+        .thenAnswer((_) async => const Right(tWeatherData));
 
     final result = await usecase!.execute(city: tCity);
 
-    expect(result, Right(tWeatherData));
+    expect(result, const Right(tWeatherData));
 
     verify(mockWeatherRepository!.getWeatherData(tCity));
 
