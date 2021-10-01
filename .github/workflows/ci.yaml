@@ -17,6 +17,9 @@ jobs:
       uses: subosito/flutter-action@v1.4.0 
       with:
         channel: 'stable'
+
+    - name: Flutter upgrade
+      uses: flutter upgrade
   
     - name: Get pub dependencies
       run: flutter pub get
