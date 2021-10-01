@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   code-analysis-and-testing:
@@ -20,10 +20,10 @@ jobs:
   
     - name: Get pub dependencies
       run: flutter pub get
-  
+
     - name: Flutter analyze
       run: flutter analyze
-    
+
     - name: Flutter test
       run: flutter test
 
