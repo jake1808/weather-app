@@ -19,7 +19,7 @@ jobs:
         channel: 'stable'
 
     - name: Flutter upgrade
-      uses: flutter upgrade
+      run: flutter upgrade
   
     - name: Get pub dependencies
       run: flutter pub get
