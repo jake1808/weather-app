@@ -16,8 +16,9 @@ void main() {
     usecase = GetWeatherData(mockWeatherRepository!);
   });
 
-  final tCity = "lusaka";
-  final tWeatherData = const WeatherEntity(
+  const tCity = "lusaka";
+  // ignore: unnecessary_const
+  const tWeatherData = const WeatherEntity(
     coord: Coord(lat: -15.4067, lon: 28.2871),
     weather:
         Weather(id: 800, main: "clear", description: "clear sky", icon: "01n"),
